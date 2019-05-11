@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html lang = "vi-VN">
+		<head>
+			<link rel = "stylesheet" type = "text/css" href = "bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+			
+			<style>
+				body{
+					padding-left : 10%;
+					padding-right : 10%;
+				}
+				table { width : 100%;}
+				td{width : 20% 20% 30% 15% 15%;
+				padding : 10px;
+				}
+			</style>
+			
+		</head>
+		
+		<body class = "bg-light">
+			<div class = "dropdown">
+				<button type = "button" style = "padding : 0" id = "calender" class = "dropdown-toggle" data-toggle = "dropdown">
+					<img src = "image/calendericon.png" style = "width : 40px; height : 34px">
+				</button>
+				
+				<div class = "dropdown-menu">
+					<div class = "year">
+						<div class = "row">
+							<div class = "col">
+								<button class = "btn btn-light  font-weight-bold" id = "des"><</button>
+							</div>
+
+							<div class = "col">
+								<div id = "resultYear" class = "pt-2">2019</div>
+							</div>
+
+							<div class = "col">
+								<button class = "btn btn-light font-weight-bold" id = "des">></button>
+							</div>
+						</div>
+						
+						<div class = "month">
+							<div class = "row">
+								<div class = "col">
+									<button id = "1">1</button>
+								</div>
+								
+								<div class = "col">
+									<button id = "2">2</button>
+								</div>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+		</body>
+	</html>
+	

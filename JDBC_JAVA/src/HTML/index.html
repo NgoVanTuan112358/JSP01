@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>BOOTSTRAP 4</title>
+			
+			<meta charset = "UTF-8" />
+			<meta name = "view-port" content = "width=device-width, initial-scale=1.0" />
+			
+			<link rel = "stylesheet" type = "text/css" href = "E:\HTML\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+			
+		</head>
+		
+		<body class = "bg-light">
+			
+			<!-- NAVIGATION BAR -->
+			<nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				
+				<a class = "navbar-brand text-white font-weight-bold text-center" style = "width:25%;margin-right : 30%" href = "index.html">DevShool</a>
+				
+				<button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#nav-menu">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+			
+				<div class = "collapse navbar-collapse" id = "nav-menu">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a href = "#test" data-toggle = "collapse" class = "nav-link">About</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "services.html" class = "nav-link">
+						Services
+						<sup><span class = "badge badge-lg badge-danger badge-pill p-1 font-weight-bold">3</span></sup>
+						</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "contact.html" class = "nav-link">Contact</a>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "portfolio.html" class = "nav-link dropdown-toggle" data-toggle = "dropdown" >Portfolio</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "portfolio.html" class = "dropdown-item">Project one</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project two</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project three</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project four</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project five</a>
+						</div>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Blog</a>
+						
+						<div class = "dropdown-menu">
+							<a href  = "blog1.html" class = "dropdown-item">Blog 1</a>
+							<a href  = "#" class = "dropdown-item">Blog 2</a>
+							<a href  = "#" class = "dropdown-item">Blog 3</a>
+							<a href  = "#" class = "dropdown-item">Blog 4</a>
+							<a href  = "#" class = "dropdown-item">Blog 5</a>
+						</div>
+						
+					</li>
+				
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Other Page</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "pricing.html" class = "dropdown-item">PRICING</a>
+							<a href = "#" class = "dropdown-item">CSS</a>
+							<a href = "#" class = "dropdown-item">JAVA</a>
+							<a href = "#" class = "dropdown-item">SQL</a>
+							<a href = "#" class = "dropdown-item">JDBC</a>
+						</div>
+						
+					</li>
+				</ul>
+				</div>
+			</nav>
+			
+			<!-- SLIDES SHOW -->
+			<div class = "carousel slide" data-ride = "carousel" id = "slide">
+				<ul class = "carousel-indicators">
+					<li data-target = "#slide" data-slide-to = "0" class = "active"></li>
+					<li data-target = "#slide" data-slide-to = "1"></li>
+					<li data-target = "#slide" data-slide-to = "2"></li>
+					<li data-target = "#slide" data-slide-to = "3"></li>
+					<li data-target = "#slide" data-slide-to = "4"></li>
+					<li data-target = "#slide" data-slide-to = "5"></li>
+					<li data-target = "#slide" data-slide-to = "6"></li>	
+				</ul>
+				
+				<div class = "carousel-inner">
+					<div class = "carousel-item active">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\html-carousel.jpg" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>HTML 5</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\css-carousel.jpg" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>CSS 3</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\bootstrap-carousel.jpg" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>BOOTSTRAP 4</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\javascript-carousel.png" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>JAVASCRIPT</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\jquery-carousel.png" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>JQUERY</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\java-carousel.png" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>JAVA</h4>
+						</div>
+					</div>
+					
+					<div class = "carousel-item">
+						<a href = "#"><img src = "E:\DEVSCHOOL\image\sql-carousel.jpg" class = "rounded img-thumbnail img-fluid w-100" style = "height:500px" /></a>
+						
+						<div class = "carousel-caption bg-primary">
+							<h4>SQL</h4>
+						</div>
+					</div>
+					
+				</div>
+			
+				<a class = "carousel-control-prev" href = "#slide" data-slide = "prev">
+						<span class = "carousel-control-prev-icon"></span>
+				</a>
+					
+				<a class = "carousel-control-next" href = "#slide" data-slide = "next">
+					<span class = "carousel-control-next-icon"></span>
+				</a>
+					
+			</div>
+			
+			<div style = "padding-left : 40px; padding-top : 20px"><h3>Welcome to Modern Bussiness</h3></div>
+			
+			<!-- EXAMPLE -->
+			<div class = "collapse" id = "test">
+				<h1>ONCLICK HREF TO MOVE TO ID</h1>
+			</div>
+			
+			<!--CARD 1-->
+			<div class = "card-deck" style = "padding : 40px">
+			
+				<div class = "card">
+					<div class = "card-header"><h4 class = "card-title">Card Title</h4></div>
+					
+					<div class = "card-body">
+						Adds a right (next) button to the carousel,
+						which allows the user to go forward between the slides
+					</div>
+					
+					<div class = "card-footer">
+						<a href = "#" class = "btn btn-primary">Learn More</a> 
+					</div>
+				</div>
+				
+				<div class = "card" >
+					<div class = "card-header"><h4 class = "card-title">Card Title</h4></div>
+					
+					<div class = "card-body">
+						Adds a right (next) button to the carousel,
+						which allows the user to go forward between the slides
+					</div>
+					
+					<div class = "card-footer">
+						<a href = "#" class = "btn btn-primary">Learn More</a> 
+					</div>
+				</div>
+				
+				<div class = "card">
+					<div class = "card-header"><h4 class = "card-title">Card Title</h4></div>
+					
+					<div class = "card-body">
+						Adds a right (next) button to the carousel,
+						which allows the user to go forward between the slides
+					</div>
+					
+					<div class = "card-footer">
+						<a href = "#" class = "btn btn-primary">Learn More</a> 
+					</div>
+				</div>
+			</div>
+			
+			<!-- CARD 2 -->
+			<div style = "padding-left:40px"> <h3>Portfolio Heading</h3></div
+			
+			<div class = "card-deck" style = "padding-left : 40px; padding-right:40px">
+			<div class = "container-fluid">
+			<div class = "row">
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+						
+							<img src = "E:\html5-image.png" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%;height :250px">
+						
+						<div class = "card-body" style = "overflow : hidden">
+							<h4 class = "card-title">HTML 5</h4>
+							<p class = "card-text">
+								Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+							<img src = "E:\css3-image.png" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%;height:250px">
+						
+						<div class = "card-body">
+							<h4 class = "card-title">CSS 3</h4>
+							<p class = "card-text">
+							Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+						
+							<img src = "E:\bootstrap4-image.jpg" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%;height:250px">
+						
+						<div class = "card-body">
+							<h4 class = "card-title">BOOTSTRAP 4</h4>
+							<p class = "card-text">
+							 Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+						
+							<img src = "E:\javascript-image.png" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%;height:250px">
+						
+						<div class = "card-body">
+							<h4 class = "card-title">JAVASCRIPT</h4>
+							<p class = "card-text">
+							Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+						
+						<img src = "E:\java8-image.png" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%; height:250px">
+						
+						<div class = "card-body" >
+							<h4 class = "card-title">JAVA</h4>
+							<p class = "card-text">
+								Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12" style = "margin-top : 20px">
+					<div class = "card w-100">
+						
+						<img src = "E:\mysql-image.png" class = "card-img-top rounded img-thumbnail img-fluid" style = "width : 100%; height:250px">
+		
+						<div class = "card-body">
+							<h4 class = "card-title">MYSQL</h4>
+							<p class = "card-text">
+							Adds a right (next) button to the carousel,
+							which allows the user to go forward between the slides
+							</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+			</div>
+			
+			<div class = "alert alert-success mt-4 alert-dismissible fade show">
+				<button class = "close" data-dismiss = "alert">&times;</button>
+				<h4 class = "text-danger font-weight-bold text-center"> Cảm ơn bạn đã ghé thăm trang web của chúng tôi</h4>
+			</div>
+			
+			<div class = "container-fluid bg-dark text-white text-center display4" style = "padding : 20px; margin-top : 40px">Copyright @ Bootstrap 4 </div> 
+			<button class = "btn btn-primary" type = "button" oncontextmenu = "info()" id = "button">EVENT</button>
+			
+			<script>
+				function info(){
+				 alert("You are clicking right mouse");
+				
+				}
+				
+				function drag(){
+				 alert("You are dragginh element");
+				}
+			</script>
+			
+			<div class = "container-fluid bg-primary" id = "drag" style = "width : 20%; height : 20%" ondrag = "drag()">
+				DRAG ME
+			</div>
+			
+			
+		</body>
+	</html>

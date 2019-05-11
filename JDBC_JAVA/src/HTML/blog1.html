@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>BOOTSTRAP 4</title>
+			
+			<meta charset = "UTF-8" />
+			<meta name = "view-port" content = "width=device-width, initial-scale=1.0" />
+			
+			<link rel = "stylesheet" type = "text/css" href = "E:\HTML\bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+			
+			<style>
+				.list-group-item{
+							border:none;
+							}
+			</style>
+			
+		</head>
+		
+		<body class = "bg-light">
+			<!-- NAVIGATION BAR -->
+			<nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				
+				<a class = "navbar-brand text-white font-weight-bold text-center" style = "width:25%;margin-right : 30%" href = "index.html">DevShool</a>
+				
+				<button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#nav-menu">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+			
+				<div class = "collapse navbar-collapse" id = "nav-menu">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a href = "about.html" class = "nav-link">About</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "services.html" class = "nav-link">
+						Services
+						<sup><span class = "badge badge-lg badge-danger badge-pill p-1 font-weight-bold">3</span></sup>
+						</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "contact.html" class = "nav-link">Contact</a>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown" >Portfolio</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "portfolio.html" class = "dropdown-item">Project one</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project two</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project three</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project four</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project five</a>
+						</div>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle active" data-toggle = "dropdown">Blog</a>
+						
+						<div class = "dropdown-menu">
+							<a href  = "blog1.html" class = "dropdown-item">Blog 1</a>
+							<a href  = "#" class = "dropdown-item">Blog 2</a>
+							<a href  = "#" class = "dropdown-item">Blog 3</a>
+							<a href  = "#" class = "dropdown-item">Blog 4</a>
+							<a href  = "#" class = "dropdown-item">Blog 5</a>
+						</div>
+						
+					</li>
+				
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Other Page</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "pricing.html" class = "dropdown-item">PRICING</a>
+							<a href = "#" class = "dropdown-item">CSS</a>
+							<a href = "#" class = "dropdown-item">JAVA</a>
+							<a href = "#" class = "dropdown-item">SQL</a>
+							<a href = "#" class = "dropdown-item">JDBC</a>
+						</div>
+						
+					</li>
+				</ul>
+				</div>
+			</nav>
+			
+			<!-- BODY -->
+			<div style = "margin-top : 80px; margin-left : 8%; margin-right : 8%">
+				<!-- TITLE -->
+				<h3><span class = "font-weight-bold">Blog 1</span> Subheading</h3>
+				
+				<!-- BREADCRUMB -->
+				
+				<div class  = "breadcrumb">
+					<div class = "breadcrumb-item">
+						<a href = "index.html">Home</a>
+					</div>
+					
+					<div class = "breadcrumb-item">
+						Blog 1
+					</div>
+				</div>
+				
+				<!-- BLOG-BODY -->
+				<div class = "row">
+					
+					<!-- COL-LEFT -->
+					<div class = "col-xl-8 col-lg-8 col-md-6 col-sm-12">
+						<div class = "card w-100">
+							<div class = "card-body">
+								
+								<img src = "image/blog1-image-1.jpg" class = "card-img-top rounded img-thumbnail ing-fluid w-100" style = "height : 300px">
+								
+								<div class = "card-title font-weight-bold" style = "margin-top:10px"><h4>LÀM SAO HỌC LẬP TRÌNH TỪ CON SỐ 0??</div>
+								
+								<div class = "card-text"> Bạn bắt đầu học lập trình từ con số 0, bạn không có chút gì kiến thức về lập trình, bạn chẳng có năng khiếu về tư duy...Thì đừng lo, bạn vẫn có thể trở thành lập trình viên xuất sắc...Cái bạn thiếu không phải kiến thức, kĩ năng mà là niềm đam mê về lập trình và một người thầy có thể hướng dẫn cho bạn. Đối với đam mê thì tôi tin chắc bạn đã mang nó trong người...Nhiệm vụ của chúng tôi là sẽ định hướng cho bạn hướng đi và cung cấp cho bạn những kiến thức cần thiết để trở thành lập trình viên. Hãy đăng kí các khóa học của chúng tôi, bạn sẽ được trải nghiệm kì tích từ ZERO thành HERO</div>
+								
+							</div>
+							
+							<div class = "card-footer">
+								<button class = "btn btn-primary" id = "btn">Learn More</button>
+								
+								<!-- TOAST -->
+								<div class = "toast">
+									<div class = "toast-header">
+										TOAST DEMO
+									</div>
+									
+									<div class = "toast-body">
+										CLICK BUTTON TO SHOW TOAST BOX
+									</div>
+								</div>
+								
+								<script>
+									$(document).ready(function(){
+										$('#btn').click(function(){
+											$(".toast").toast("show");
+										});
+									});
+								</script>
+							</div>
+						</div>
+						
+						<div class = "card w-100 mt-4">
+							<div class = "card-body">
+								
+								<img src = "image/blog1-image-2.png" class = "card-img-top rounded img-thumbnail ing-fluid w-100" style = "height : 300px">
+								
+								<div class = "card-title font-weight-bold" style = "margin-top:10px"><h4>5 BƯỚC ĐỂ HACKER XÂM NHẬP VÀO HỆ THỐNG </div>
+								
+								<div class = "card-text">
+								Làm sao Hacker có thể xâm nhập vào các hệ thống, và học xâm nhập theo cách nào.Nói chung có nhiều cách Hack khác nhau, tùy theo đối tượng mà Hacker muốn đánh cắp.Nhưng nhìn chung có 5 bước mà bất kì hacker nào cũng áp dụng.
+								<br> Bước 1 : Thu thập thông tin. Trước khi tiến hành hack một hệ thống nào đó, hacker phải thu thập càng nhiều thông tin có lợi thì công việc hack sẽ trở nên dễ dàng hơn nhiều. Các thông tin mà hacker muốn thu thập như địa chỉ IP,thông tin về host...
+								<br> Bước 2 : Xâm nhập.Sau khi thu thập thông tin, hacker sẽ tìm cách xác định lỗ hỏng trong hệ thống cảu bạn, và tiến hành xâm nhập vào.
+								<br> Bước 3 : Tấn công. Sau khi xâm nhập thành công, hacker sẽ tiến hành phá hoại hệ thống theo nhiều cách khác nhau mà họ muốn.
+								<br> Bước 4 : Tạo cổng sau. Bước thứ mà hacker muốn thực hiện, đó là tạo cổng sau, để lần xâm nhập tiếp theo có thể thực hiện dễ dàng hơn.
+								<br> Bước 5 : Xóa dấu vết. Bước cuối cùng hacker sẽ xóa các dấu vết để che giấu thân phận và tránh bị các nhà bảo mật phát hiện.
+								</div>
+							</div>
+							
+							<div class = "card-footer">
+								<a href = "#" class = "btn btn-primary">Learn More</a>
+							</div>
+						</div>
+						
+						<!-- PAGINATION -->
+							<ul class = "pagination justify-content-center mt-4">
+								<li class = "page-item">
+									<a href = "#" class = "page-link"> <- Older</a>
+								</li>
+								
+								<li class = "page-item">
+									<a href = "#" class = "page-link"> Newer -> </a>
+								</li>
+							</ul>
+					</div>
+					
+					<!-- COL-RIGHT -->
+					
+					<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12">
+						<div class = "card w-100">
+							<div class = "card-header font-weight-bold"><h4>Search</h4></div>
+							
+							<div class = "card-body">
+								<form action = "#" method = "post">
+									<div class = "input-group">
+										<input type = "search" class = "form-control" name = "search">
+										<div class = "input-group-append">
+											<input type = "submit" class = "btn btn-dark text-white" value = "Go">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						
+						<div class = "card w-100 mt-4">
+							<div class = "card-header font-weight-bold"><h4>Categories</h4></div>
+							
+							<div class = "card-body">
+								<div class = "row">
+									<div class = "col-xl-6 col-lg-6 col-md-6 col-sm-12">
+										<ul class = "list-group list-gruop-vertical">
+											<li class = "list-group-item">
+												<a href = "#">Webdesign</a>
+											</li>
+											
+											<li class = "list-group-item">
+												<a href = "#">HTML</a>
+											</li>
+											
+											<li class = "list-group-item">
+												<a href = "#">CSS</a>
+											</li>
+										</ul>
+									</div>
+									
+									<div class = "col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+										<ul class = "list-group list-gruop-vertical">
+											<li class = "list-group-item">
+												<a href = "#">JS</a>
+											</li>
+											
+											<li class = "list-group-item">
+												<a href = "#">Java</a>
+											</li>
+											
+											<li class = "list-group-item">
+												<a href = "#">SQL</a>
+											</li>
+										</ul>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class = "card w-100 mt-4" style = "height :400px">
+							<div class = "card-header font-weight-bold"><h4>Slide widget</h4></div>
+							
+							<div class = "card-body">
+								<div class = "carousel slide" data-ride = "carousel" id = "slide">
+									<div class = "carousel-inner">
+										
+										<div class = "carousel-item active border border-dark" style = "width : 100%; height : 300px">
+											<a href = "#">
+												<div class = "card">
+													<img src = "image/blog1-image-1.jpg" class = "card-img-top rounded img-thumbnail img-fluid w-100" style = "height: 200px">
+													
+													<div class = "card-body">
+														<h5 class = "font-weight-bold">LÀM SAO HỌC LẬP TRÌNH TỪ CON SỐ 0??</h5>
+													</div>
+												</div>
+											</a>
+										</div>
+										
+										<div class = "carousel-item border border-dark" style = "width : 100%; height : 300px">
+											
+											<a href = "#">
+												<div class = "card">
+													<img src = "image/blog1-image-2.png" class = "card-img-top rounded img-thumbnail img-fluid w-100" style = "height: 200px">
+													
+													<div class = "card-body">
+														<h5 class = "font-weight-bold">5 BƯỚC ĐỂ HACKER XÂM NHẬP VÀO HỆ THỐNG </h5>
+													</div>
+												</div>
+											</a>
+											
+										</div>
+										
+									</div>
+									
+									
+									<a class = "carousel-control-prev" href = "#slide" data-slide = "prev">
+										<span class = "carousel-control-prev-icon"></span>
+									</a>
+										
+									<a class = "carousel-control-next " href = "#slide" data-slide = "next">
+										<span class = "carousel-control-next-icon"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				
+				</div>
+			</div>
+			
+			<!--FOOTER -->
+			<div class = "container-fluid bg-dark text-white text-center display4" style = "padding : 20px; margin-top : 40px">Copyright @ Bootstrap 4 </div>
+		</body>
+	</html>

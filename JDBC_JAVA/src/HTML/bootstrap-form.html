@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>BOOTSTRAP-FORM</title>
+			<link rel = "stylesheet" type = "text/css" href = "bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+		</head>
+		
+		<body>
+			<form action = "#" method = "post">
+				<div class = "custom-file">
+					<input type = "file" class = "custom-file-input" name = "fileUpload" id = "fileUpload">
+					<label class = "custom-file-label bg-primary font-weight-bold text-white" for = "fileUpload">Upload</label>
+				</div>
+				
+				<script>
+					$(".custom-file-input").on("change", function() {
+						var fileName = $(this).val().split("\\").pop();
+						$(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+						});
+				</script>
+			</form>
+		</body>
+	</html>

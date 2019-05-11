@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<script src = "E:\HTML\bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+		</head>
+		
+		<body>
+			
+			<div id = "on-d1" onclick = "expand(d1)">SHOW</div>
+			<div id = "off-d1" onclick = "collapse(d1)">HIDE</div>
+			
+			<div id = "content-d1">HIDE/SHOW IN JQUERY</div>
+			
+			<script>
+				function collapse(id){
+					$("#on-"+id).hide();
+					$("#off-"+id).show();
+					$("content-"+id).hide();
+				}
+				
+				function expand(id){
+					$("#on-"+id).show();
+					$("#off-"+id).hide();
+					$("content-"+id).show();
+				}
+			</script>
+		
+		</body>
+	</html>

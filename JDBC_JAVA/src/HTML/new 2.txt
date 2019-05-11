@@ -1,0 +1,3 @@
+Font awesome icon <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous
+Bootstrap icon <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+Google icon <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">

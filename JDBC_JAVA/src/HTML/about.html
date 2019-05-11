@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>BOOTSTRAP 4</title>
+			
+			<meta charset = "UTF-8" />
+			<meta name = "view-port" content = "width=device-width, initial-scale=1.0" />
+			
+			<link rel = "stylesheet" type = "text/css" href = "bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+			
+			
+		</head>
+		
+		<body class = "bg-light">
+			<!-- NAVIGATION BAR -->
+			<nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				
+				<a class = "navbar-brand text-white font-weight-bold text-center" style = "width:25%;margin-right : 30%" href = "index.html">DevShool</a>
+				
+				<button type = "button" class = "navbar-toggler" data-toggle = "collapse" data-target = "#nav-menu">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+			
+				<div class = "collapse navbar-collapse" id = "nav-menu">
+				<ul class = "navbar-nav">
+					<li class = "nav-item">
+						<a href = "about.html" class = "nav-link active">About</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "services.html" class = "nav-link">
+						Services
+						<sup><span class = "badge badge-lg badge-danger badge-pill p-1 font-weight-bold">3</span></sup>
+						</a>
+					</li>
+					
+					<li class = "nav-item">
+						<a href = "contact.html" class = "nav-link">Contact</a>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown" >Portfolio</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "portfolio.html" class = "dropdown-item">Project one</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project two</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project three</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project four</a>
+							<a href = "portfolio.html" class = "dropdown-item">Project five</a>
+						</div>
+					</li>
+					
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Blog</a>
+						
+						<div class = "dropdown-menu">
+							<a href  = "blog1.html" class = "dropdown-item">Blog 1</a>
+							<a href  = "#" class = "dropdown-item">Blog 2</a>
+							<a href  = "#" class = "dropdown-item">Blog 3</a>
+							<a href  = "#" class = "dropdown-item">Blog 4</a>
+							<a href  = "#" class = "dropdown-item">Blog 5</a>
+						</div>
+						
+					</li>
+				
+					<li class = "nav-item dropdown">
+						<a href = "#" class = "nav-link dropdown-toggle" data-toggle = "dropdown">Other Page</a>
+						
+						<div class = "dropdown-menu">
+							<a href = "pricing.html" class = "dropdown-item">PRICING</a>
+							<a href = "#" class = "dropdown-item">CSS</a>
+							<a href = "#" class = "dropdown-item">JAVA</a>
+							<a href = "#" class = "dropdown-item">SQL</a>
+							<a href = "#" class = "dropdown-item">JDBC</a>
+						</div>
+						
+					</li>
+				</ul>
+				</div>
+			</nav>
+			
+			<!-- BODY -->
+			<div style = "margin-top : 80px; margin-left : 8%; margin-right : 8%">
+				<!-- TITLE -->
+				<h3><span class = "font-weight-bold">About</span> Subheading</h3>
+				
+				<!-- BREADCRUMB -->
+				
+				<div class  = "breadcrumb">
+					<div class = "breadcrumb-item">
+						<a href = "index.html">Home</a>
+					</div>
+					
+					<div class = "breadcrumb-item">
+						About
+					</div>
+				</div>
+				
+				<!-- CONTENT -->
+				<div class = "row">
+					<div class = "col-xl-6 col-lg-6 col-md-6 col-sm-12">
+						<img src = "image/d-school.jpg" class = "card-img-left rounded img-thumbnail img-fluid w-100" style = "height:300px">
+					</div>
+					
+					<div class = "col-xl-6 col-lg-6 col-md-6 col-sm-12">
+				
+						<h4> GIỚI THIỆU - DevShool</h4>
+						
+						<p> 
+						DevShool mang sứ mệnh đó là đưa đến cho các lập trình viên những bài học về lập trình web hay nhất
+						kèm theo đó là các khóa học chất lượng. Giúp cho các bạn từ con số 0 cho đến một lập trình viên 
+						chuyên nghiệp. Học phí mỗi khóa học rất phù hợp với các bạn sinh viên.Ngoài ra DevShool luôn cập
+						nhật những thông tin công nghệ mới nhất trên thế giới...Từ đó giúp các bạn có thể theo kịp xu hướng
+						công nghệ mới.Hi vọng các bạn sẽ luôn ủng hộ DevShool để trang web ngày càng hoàn thiện hơn.
+						</p>					
+							
+					</div>
+					
+				</div>
+				
+				<!-- OUR TEAM -->
+				<h4 class = "mt-4 mb-4">Our Team</h4>
+				
+				<div class = "row">
+					<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+						<div class = "card">
+							<img src = "image/mark-juckerberg.jpg" class = "card-img-top img-thumbnail img-fluid rounded w-100" style = "height:300px">
+							
+							<div class = "card-body">
+								<div class = "card-title text-center font-weight-bold">
+									MARK JUCKERBERG
+								</div>
+								
+								<div class = "card-text">
+									Mark Juckerberg là nhà sáng lập ra mạng xã hội Facebook. Với ước mơ không chỉ kết nối mọi người trên thế
+									giới lại với nhau. Mark còn muốn đóng góp tài năng của mình cho lĩnh vực công nghệ thông tin.Mark chính thức 
+									gia nhập DevShool từ năm 2018 và hiện đang phụ trách về mảng giảng dạy trực tuyến
+								</div>
+							</div>
+							
+							<div class = "card-footer text-center">
+								<a href = "#">markjuckerberg@gmail.com</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+						<div class = "card">
+							<img src = "image/bill-gate.jpg" class = "card-img-top img-thumbnail img-fluid rounded w-100" style = "height:300px">
+							
+							<div class = "card-body">
+								<div class = "card-title text-center font-weight-bold">
+									BILL GATE
+								</div>
+								
+								<div class = "card-text">
+									Bill Gate là nhà sáng lập công ty Microsoft.Và một trong những người giàu có nhất thế giới
+									với tài sản trên 100 tỷ USD.Bill Gate được xem là thiên tài công nghệ thông tin.Ông gia nhập
+									DevShool với mong muốn chia sẽ kinh nghiệm về lập trình cho các bạn trẻ.
+								</div>
+							</div>
+							
+							<div class = "card-footer text-center">
+								<a href = "#">billgate@gmail.com</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class = "col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3">
+						<div class = "card">
+							<img src = "image/jack-ma.jpg" class = "card-img-top img-thumbnail img-fluid rounded w-100" style = "height:300px">
+							
+							<div class = "card-body">
+								<div class = "card-title text-center font-weight-bold">
+									JACK MA
+								</div>
+								
+								<div class = "card-text">
+									Jack Ma là ông chủ của tập đoàn Alibaba. Ông đã vượt qua vô vàn khó khắn để xây dựng thành
+									công đế chế thương mại điện tử ở Trung Quốc. Ngày nay, mọi người không chỉ biết đến ông như một
+									tỷ phú công nghệ, là ông chủ Alibaba mà còn là tấm gương vượt khó trong khởi nghiệp cho các bạn
+									trẻ.
+								</div>
+							</div>
+							
+							<div class = "card-footer text-center">
+								<a href = "#">jackma@gmail.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- OUR CUSTOMER -->
+				<h4 class = "mt-4 mb-4">Our Customer</h4>
+				
+			</div>
+			
+			<!--FOOTER -->
+			<div class = "container-fluid bg-dark text-white text-center display4" style = "padding : 20px; margin-top : 40px">Copyright @ Bootstrap 4 </div> 
+
+		</body>
+	</html>

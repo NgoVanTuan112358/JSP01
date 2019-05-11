@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html lang = "vi-VN">
+		<head>
+			<title>BAI 1</title>
+			
+			<link rel = "stylesheet" type = "text/css" href = "bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\bootstrap.min.js"></script>
+		</head>
+		
+		<body>
+			<button class = "btn btn-primary" type = "button" onmouseover = "mouseOver()" onmouseout = "mouseOut()">HOVER ME</button>
+			<h2 id = "info">EVENT</h2>
+			<script>
+				function mouseOver(){
+					document.getElementById("info").innerHTML = "MOUSE OVER";
+					}
+				
+				function mouseOut(){
+					document.getElementById("info").innerHTML = "MOUSE OUT";
+					}
+					
+					
+			</script>
+			
+		</body>
+	</html>
