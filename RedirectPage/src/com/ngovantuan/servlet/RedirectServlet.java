@@ -37,7 +37,7 @@ public class RedirectServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		if(!(name.equals("Ngo Van Tuan") || email.equals("ngovantuan@gmail.com"))) {
+		if(!(name.equals("Ngo Van Tuan") && email.equals("ngovantuan@gmail.com"))) {
 			out.println("Name or email is not correct");
 		}else if(!pass.equals("123456789")) {
 			out.println("Password is not correct");
