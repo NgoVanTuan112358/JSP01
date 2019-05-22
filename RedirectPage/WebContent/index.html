@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	<html lang = "vi-VN">
+		<head>
+			<meta charset = "UTF-8" />
+			
+			<link rel = "stylesheet" type = "text/css" href = "bootstrap-4.3.1-dist\css\bootstrap.min.css" />
+			<script src = "bootstrap-4.3.1-dist\js\jquery.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\popper.min.js"></script>
+			<script src = "bootstrap-4.3.1-dist\js\bootstrap.min.js" ></script>
+			
+			
+			<style>
+				body{
+					padding-left : 10%;
+					padding-right : 10%;
+				}
+				table { width : 100%;}
+				td{width : 20% 20% 30% 15% 15%;
+				padding : 10px;
+				}
+				.valResult{
+				color : red;
+				font-weight:bold;
+				}
+				
+				input[type="radio"]{
+					display : inline-block;
+					}
+					
+				label{
+				display : inline-block;
+				}
+				
+			</style>
+			
+			<script src = "validation.js"></script>
+			
+		</head>
+		
+		<body class = "bg-light">
+			<form class = "d-flex justify-content-center" method = "POST"  id = "formSignUp" onsubmit = "return validate()" action = "RedirectServlet">
+				<table>
+					<tr> <th colspan="5"><h3  class = "text-center">ĐĂNG KÍ</h3></th> </tr>
+					
+					<tr> <td>*Trường bắt buộc</td> <td></td> <td> <div class = "custom-control custom-radio custom-control-inline"> <input type = "radio" class = "custom-control-input" id = "personal" name = "client" value = "personal" onclick = "checkRadio1()"> <label class = "custom-control-label" for = "personal"> Cá nhân</label> </div> <div class = "custom-control custom-radio custom-control-inline"> <input type = "radio" class = "custom-control-input" id = "company" name = "client" value = "company" onclick = "checkRadio1()"> <label class = "custom-control-label" for = "company"> Công ty/Tổ chức</label></div> </td> <td> <span id = "valPerson" class = "valResult"></span> </td> <td></td> </tr>
+					
+					<tr> <td></td> <td>Họ và Tên*</td> <td> <input type = "text" name = "name" class = "form-control" id = "name"> </td> <td> <span id ="nameError" class = "valResult"></span></td> <td></td> </tr>
+					
+					<tr> <td></td> <td>Số điện thoại*</td> <td> <input type = "text" name = "phone" id = "phone" class = "form-control"></td> <td> <span id ="phoneError" class = "valResult"></span> </td> <td></td> </tr>
+					
+					
+					
+					<tr> <td></td> <td>Ngày sinh*</td> <td> <div class = "input-group"> <input type = "text" name = "birthdate" id = "birthdate" class = "form-control"> <div class = "input-group-append"><button type = "button" style = "padding : 0" id = "calender"><img src = "image/calendericon.png" style = "width : 40px; height : 34px"></button></td> <td> <span id ="dateError" class = "valResult"></span> </td> <td></td> </tr>
+					
+					
+					
+					<tr> <td></td> <td>Địa chỉ</td> <td><input type = "text" name = "address" id = "address" class = "form-control"></td> <td><div class = "custom-control custom-radio"> <input type = "radio" name = "city" value = "hcm" id = "hcm" class = "custom-control-input" onclick = "checkHcm()"><label class = "custom-control-label" for = "hcm">TP.HCM</label></div></td> <td> <select name = "district" id = "district" class = "custom-select"> <option value = ""></option> <option value = "district1">Distric 1</option>  <option value = "district2">Distric 2</option> <option value = "district3">Distric 3</option>  <option value = "district4">Distric 4</option>  <option value = "district5">Distric 5</option>  <option value = "district6">Distric 6</option>  <option value = "district7">Distric 7</option>  <option value = "district8">Distric 8</option>  <option value = "district9">Distric 9</option>  <option value = "district10">Distric 10</option>  <option value = "district11">Distric 11</option>  <option value = "district12">Distric 12</option>  <option value = "district13">Distric 13</option> </select></td> </tr>
+					
+					<tr> <td></td> <td><span id ="cityError" class = "valResult"></span></td> <td></td> <td><div class = "custom-control custom-radio"> <input type = "radio" name = "city" value = "other" id = "other" class = "custom-control-input" onclick = "checkOther()"><label class = "custom-control-label" for = "other">Tỉnh/ thành phố khác</label></div></td> <td> <select class = "custom-select" name = "cityOther" id = "cityOther"> <option value = ""></option> <option value = "danang">Đà Nẵng</option> <option value = "hanoi">Hà Nội</option> <option value = "hue">Huế</option></select></td> </tr>
+					
+					<tr> <td></td> <td>Giới tính*</td> <td> <div class = "custom-control custom-radio custom-control-inline"> <input type = "radio" name = "genner" id = "male" value = "male" class = "custom-control-input" onclick = "checkGenner()"><label class = "custom-control-label" for = "male">Nam</label></div>  <div class = "custom-control custom-radio custom-control-inline"> <input type = "radio" name = "genner" id = "female" value = "female" class = "custom-control-input"  onclick = "checkGenner()"><label class = "custom-control-label" for = "female">Nữ</label></div></td> <td> <span id ="gennerError" class = "valResult"></span> </td> <td></td> </tr>
+					
+					<tr> <td></td> <td>Email*</td> <td><input type = "text" name = "email" id = "email" class = "form-control"></td> <td> <span id ="emailError" class = "valResult"></span> </td> <td></td> </tr>
+					
+					<tr> <td></td> <td>Mật khẩu*</td> <td><input type = "password" name = "password" id = "password" class = "form-control" onkeydown = "checkPass()"></td> <td> <div class ="custom-control custom-switch">  <input type = "checkbox" class = "custom-control-input" id = "showPass" onclick = "showP()" value = "show"> <label for = "showPass" class = "custom-control-label">Hiển thị mật khẩu</label></div> </td> <td><div id = "notePass"></div></td> </tr>
+					
+					<tr> <td></td> <td>Nhập lại mật khẩu*</td> <td><input type = "password" name = "repassword" id = "repassword" class = "form-control"></td> <td> <span id ="passError" class = "valResult"></span> </td> <td></td> </tr>
+					<tr> <td colspan = "5" class = "text-center"> <input type = "submit" name = "submit" id = "submit" class = "btn btn-primary font-weight-bold" value = "Đăng kí"></td> </tr>
+				</table>
+			</form>
+			
+		</body>
+	</html>
